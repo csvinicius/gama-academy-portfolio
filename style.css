@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background: url(./assets/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* HEADER */
+ul {
+  list-style: none;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* MAIN */
+.container {
+  text-align: center;
+}
+
+.container .name h1 {
+  font-size: 3.75rem;
+}
+
+.container .name h5 {
+  font-size: 1.563rem;
+}
+
+#about p {
+  max-width: 600px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
