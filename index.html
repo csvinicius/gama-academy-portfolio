@@ -40,8 +40,8 @@
         <h5>Frontend Developer</h5>
       </div>
 
-      <div class="arrow">
-        <i class="fa-solid fa-angles-down"></i>
+      <div onclick="displayAbout()" class="arrow">
+        <i id="animation" class="fa-solid fa-angles-down"></i>
       </div>
 
       <div id="about">
@@ -63,6 +63,14 @@
 
     </section>
   </main>
+  <script>
+    function displayAbout() {
+      let arrow = document.getElementById('animation');
+      arrow.classList.toggle('rotate');
+      let display = document.getElementById('about');
+      display.classList.toggle('active');
+    }
+  </script>
 </body>
 
 </html>

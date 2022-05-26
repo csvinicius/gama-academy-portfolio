@@ -12,15 +12,38 @@ body {
 }
 
 /* HEADER */
-ul {
-  list-style: none;
-  font-style: italic;
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 1px 1px 10px 1px #FFFFFF;
 }
 
-a {
+
+header ul {
+  list-style: none;
+  font-style: italic;
+  display: flex;
+}
+
+header ul li {
+  padding: 5px;
+}
+
+header ul li a {
   text-decoration: none;
   font-weight: 600;
+  font-size: 1.563rem;
+  transition: 300ms;
+
 }
+
+header ul li a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
 
 /* MAIN */
 .container {
@@ -31,13 +54,43 @@ a {
   font-size: 3.75rem;
 }
 
+.arrow {
+  font-size: 30px;
+  cursor: pointer;
+  animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#animation {
+  transition: 300ms;
+  animation: blink 1s steps(5, start) infinite;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
 .container .name h5 {
   font-size: 1.563rem;
+}
+
+#about {
+  display: none;
 }
 
 #about p {
   max-width: 600px;
   text-align: justify;
   margin: 0 auto;
+}
+
+.active {
+  display: block !important;
 }
 
